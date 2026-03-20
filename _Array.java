@@ -1,9 +1,8 @@
-package RoughFiles;
-import java.lang.reflect.Array;
+
 import java.util.Arrays; //for printing arrays 
 import java.util.Collections;
 
-public class class2 {
+public class _Array {
     public static void main(String[] args) {
         int[] arr = new int[5]; // by default 0 will be filled in java
 
@@ -73,10 +72,8 @@ public class class2 {
         int index = Arrays.binarySearch(num, 2);
         System.out.println(index + " this is the index of 2 in " + Arrays.toString(num));
         // dont you think it will going to give you 1 as index of 2
-        
-         
-        
-}
+
+    }
 }
 
 // in java we use array methods llike => Arrays.xyz(we pass array here ) ;
