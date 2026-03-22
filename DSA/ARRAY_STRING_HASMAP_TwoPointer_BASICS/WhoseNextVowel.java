@@ -3,7 +3,7 @@
 
 public class WhoseNextVowel{
     public static void main(String [] args){
-
+        
         String str= "piyush" ;
         int n= str.length();
 
@@ -28,13 +28,9 @@ public class WhoseNextVowel{
                   sb.append(str.charAt(i)); 
 
             }
-
                           }
-
-
    System.out.println(sb.toString()); 
     }
-
 }
 
 
