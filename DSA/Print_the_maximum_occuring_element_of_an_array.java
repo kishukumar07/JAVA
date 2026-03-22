@@ -41,10 +41,102 @@ public class Print_the_maximum_occuring_element_of_an_array {
         // Approach2: using hasmap -> O(n{frequency}+n{max freq check}) , O(n) => space
         // need to maintain 2 variable maxFreq = -1 and maxFreqEl
 
-        Map<String, Integer> MyHashMap = new HashMap<>();
-        MyHashMap.put("apple", 2);
-        System.out.println(MyHashMap.get("apple"));
+        Map<String, Integer> myHashMap = new HashMap<>();
+
+              for(int i=0; i<n; i++){
+
+                String el =Integer.toString(arr[i]); 
+                
+                 if( !(myHashMap.containsKey(el)) ){
+                      myHashMap.put(el,1); 
+                 }
+                 else{
+                       myHashMap.put(el,myHashMap.get(el)+1); 
+                 }
+              }
+    //    System.out.println(myHashMap); 
+
+          int max = Integer.MIN_VALUE;  
+           int maxFreqEl = 1;
+        // myHashMap.forEach((key,value)->{ //withinForEach loop its not allowed to modify external variable e
+        //     // System.out.println(key+" : " +value);
+        //   if(myHashMap.get(key) >= max){
+        //          max =  myHashMap.get(key); 
+        //          maxFreqEl = Integer.parseInt(key) ; 
+        //   }
+        // });
+
+
+//Using FOREACH in HashMap
+        //  for(String key : myHashMap){  //only for arr or obj  !for hasmap
+        //     System.out.println(key+" "+ myHashMap.get(key)); 
+        //  }   //for in loop cant run here at java for HashMap
+
+
+
+// entrySet() gives you access to both key and value simultaneously
+for (Map.Entry<String, Integer> entry : myHashMap.entrySet()) {  
+    int currentFreq = entry.getValue(); //
+    
+    if (currentFreq >= max) {
+        max = currentFreq;
+        maxFreqEl = Integer.parseInt(entry.getKey()); //
+    }
+}
+        
+        System.out.println(maxFreqEl); 
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
 }
+
+
+
+
+/*
+
+myHashMap  //all key value +=1
+
+
+for(Map.Entry<String, Integer> entry:  myHashMap.entrySet() ){
+
+   System.out.println(entry.getKey()); 
+   System.out.println(entry.getValue()); 
+
+myHashMap.put(entry.getKey() , myHashMap.put(entry.getKey(),entry.getValue(entry.getKey())+1 )   )
+
+
+
+
+
+}
+
+
+
+ */
