@@ -12,7 +12,7 @@
 
 import java.util.*; 
 
-public class travers2d_array{
+public class travers2d_3_arr{
   public static void main(String[] args){
  
             Scanner sc = new Scanner(System.in); //case
@@ -47,8 +47,6 @@ public class travers2d_array{
 
 
 sc.close(); 
-
-
 
 }
 }
