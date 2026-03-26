@@ -1,0 +1,1 @@
+ myHashMap.put(0, 1);
