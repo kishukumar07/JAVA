@@ -15,7 +15,7 @@ public class BubbleSortConcept{
     int n =arr.length; 
     for(int i =0; i<=n-2 ; i++){
         
-        Boolean Swap= false; 
+        Boolean Swap = false; 
         for(int j=0; j<(n-1-i); j++){
             if(arr[j]  >  arr[j+1]){   // < / > will decide ascending desc  order ... 
                 int temp = arr[j]; 
@@ -28,8 +28,7 @@ public class BubbleSortConcept{
         System.out.println("this is already Sorted"); 
         break; 
       }
-
-
+      
     }
     
  System.out.println(" : Sorted in ASC : " + Arrays.toString(arr));  //final result  

@@ -152,9 +152,6 @@ System.out.println(minDis);
 
 //we can solve it using the shrink until sum <=k check notecopy...
 
-
-
-
  }
 }
 
