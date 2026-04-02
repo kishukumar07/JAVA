@@ -19,7 +19,7 @@ public class NextGreaterElement{
 
         while(i<n){
 
-        while((st.size()!=0 ) && ( st.peek() < arr[i]) ){
+        while((st.size()!=0 ) && ( st.peek() <= arr[i]) ){
                st.pop();
                 
         }
