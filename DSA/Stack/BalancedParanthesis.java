@@ -91,17 +91,17 @@ public class BalancedParanthesis{
           t--; 
         continue; 
     }
-    FixedStack stack = new FixedStack(n/2); 
+    FixedStack stack = new FixedStack(n); 
 
     //now the whole logic goes here ; 
     for(int i=0; i<n; i++){
-        if(i<n/2){
+        if(str.charAt(i)=='{'||str.charAt(i)=='['||str.charAt(i)=='(' ){
              stack.push(str.charAt(i)); 
         }
 
     char leftParanEl = (char) stack.peek();
  
-       if(pairMatches(leftParanEl,str.charAt(i))){
+       if(stack.size()!=0 && pairMatches(leftParanEl,str.charAt(i))){
         stack.pop(); 
        }    
     }
@@ -137,8 +137,8 @@ return true ;
 return true ; 
   }else if
    ((a=='[') && (b==']') ) 
-{
-return 
+   {
+return true; 
   }
 return false; 
 
