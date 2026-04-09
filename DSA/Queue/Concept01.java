@@ -31,9 +31,7 @@ LinkedList = dynamic nodes → can store/organize an unlimited number of
                               in mail scheduling
 
                  } 
-    
-
-
+                 
 
 // Queue in java : using linked list      
 //  Queue <Integer> q =new LinkedList<>();  
