@@ -9,7 +9,7 @@ public class MaxSumOfSubarrayOfSizeK{
   
     public static void main (String[] args){
     
-     int[] arr={1,2,3,4,5}; 
+     int[] arr= {1,2,3,4,5}; 
      int k = 3;  
 
      int MaxSum = 0; 
@@ -35,9 +35,7 @@ public class MaxSumOfSubarrayOfSizeK{
        
 
     }
-
 System.out.println(MaxSum); 
-
     
     
     }

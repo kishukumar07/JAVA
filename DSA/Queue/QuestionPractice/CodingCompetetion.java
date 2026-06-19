@@ -1,15 +1,5 @@
 import java.util.*; 
 
-// Queue<String> q = new LinkedList<>(); 
-// q.add()
-// q.remove)()
-// System.out.println(input.startsWith("5")); 
-//  int t = Integer.parseInt(sc.next()); 
-
-
-
-
-
 public class CodingCompetetion{
 
    static Queue<Integer> q1 = new LinkedList<>(); 
@@ -18,13 +8,11 @@ public class CodingCompetetion{
    static Queue<Integer> q4 = new LinkedList<>(); 
 
     public static void main(String[] args){
+
     String input ="5 \n E 1 1 \n E 2 1 \n E 1 2 \n D \n D"; 
 
-
     Scanner sc = new Scanner(input); 
-         
     int t = Integer.parseInt(sc.nextLine().trim());
-      
 
     while(t>0){
         String query = sc.nextLine(); 
@@ -43,7 +31,6 @@ public class CodingCompetetion{
 
 
 static void enqueue(int team , int value){
-                    
     if(team == 1){
         q1.add(value);
     }else if(team ==2){

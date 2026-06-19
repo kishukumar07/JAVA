@@ -44,7 +44,8 @@ public class Find_the_1stIndex_of_smallest_element {
         // current index i : left sum Lp[i] whi pe Right sum Rp[i+1] we just have to add
         // itretively and on %7=0 just apply minel logic also index
 
-        int n = arr.length;
+        int n = arr.length;  //not need to take n+1 length comapare with your note Copy soln 
+    
         int[] prefixL = new int[n + 1]; // [0,14,22,24,38,45,49]
         int[] prefixR = new int[n + 1]; // [49,35,27,25,11,4,0]
 

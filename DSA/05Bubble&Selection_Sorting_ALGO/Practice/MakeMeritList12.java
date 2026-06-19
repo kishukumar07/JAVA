@@ -84,7 +84,6 @@ public class MakeMeritList12{
 
 
 //Sorting on basis of a[1] ie.Height
-
  for(int i=0; i<n-1; i++){
     if((Integer.parseInt(arr[i][3]) == Integer.parseInt(arr[i+1][3])) && (Integer.parseInt(arr[i][1]) < Integer.parseInt(arr[i+1][1]))){
                String[] temp =arr[i]; 
