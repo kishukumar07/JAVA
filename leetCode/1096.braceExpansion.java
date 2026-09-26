@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     private int idx = 0;
-
+    
     public List<String> braceExpansionII(String expression) {
         idx = 0;
         Set<String> res = parseExpression(expression);
